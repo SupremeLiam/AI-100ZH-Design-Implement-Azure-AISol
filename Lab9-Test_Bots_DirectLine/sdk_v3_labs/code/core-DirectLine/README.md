@@ -105,11 +105,11 @@ if (activity.Attachments != null)
 
 你需要运行机器人以及客户端应用，才能运行示例。
 * 运行机器人应用
-    1. 在“Visual Studio 解决方案资源管理器”窗口中，右键单击 **“DirectLineBot”** 项目。
-    2. 在上下文菜单中，选择“调试”，然后选择“启动新实例”并等待 Web 应用程序启动__。
+    1. 在“Visual Studio 解决方案资源管理器”窗口中，右键单击 **“DirectLineBot”项目**。
+    2. 在上下文菜单中，选择“调试”，然后选择“启动新实例”并等待 _Web 应用程序_ 启动。
 * 运行客户端应用
-    1. 在“Visual Studio 解决方案资源管理器”窗口中，右键单击 **“DirectLineSampleClient”** 项目。
-    2. 在上下文菜单中，选择“调试”，然后选择“启动新实例”并等待控制台应用程序启动__。
+    1. 在“Visual Studio 解决方案资源管理器”窗口中，右键单击 **“DirectLineSampleClient”项目**。
+    2. 在上下文菜单中，选择“调试”，然后选择“启动新实例”并等待 _控制台应用_ 程序启动。
 
 要测试附件类型 `show me a hero card` 或 `send me a botframework image`，你应看到以下结果。
 

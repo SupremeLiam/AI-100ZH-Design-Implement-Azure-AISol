@@ -30,21 +30,21 @@
 
 第三，你应该拥有使用门户的经验，并且能够在 Azure 上创建资源（和花钱）。我们不会为本研讨会提供 Azure Pass。
 
->注意：本研讨会的开发和测试是使用 Visual Studio Community 版本 15.4.0 在 Data Science Virtual Machine (DSVM) 上进行的
+>**注意**：本研讨会的开发和测试是使用 Visual Studio Community 版本 15.4.0 在 Data Science Virtual Machine (DSVM) 上进行的
 
 ## 简介
 
 我们将构建一个端到端的场景，使你能够引入自己的图片、使用认知服务查找图像中的对象和人物、了解那些人的感情以及将所有数据存储到 NoSQL 存储 (CosmosDB)。我们将使用该 NoSQL 存储来填充 Azure 搜索索引，然后使用 LUIS 生成一个 Bot Framework 机器人来进行简单、有针对性的查询。
 
-> 注意：本实验是 `lab01.1-pcl_and_cognitive_services` 的延续；我们将跳过以下操作：引入图像，使用认知服务来确定有关图像的信息，以及将数据存储在 DocumentDB 中。该实验中唯一要供我们使用的工具是 DocumentDB，用于填充我们的搜索索引。如果已完成 `lab01.1-pcl_and_cognitive_services`，则可以选择使用 DocumentDB 连接字符串，而不是提供的字符串。
+> **注意**：本实验是 `lab01.1-pcl_and_cognitive_services` 的延续；我们将跳过以下操作：引入图像，使用认知服务来确定有关图像的信息，以及将数据存储在 DocumentDB 中。该实验中唯一要供我们使用的工具是 DocumentDB，用于填充我们的搜索索引。如果已完成 `lab01.1-pcl_and_cognitive_services`，则可以选择使用 DocumentDB 连接字符串，而不是提供的字符串。
 
 ## 体系结构
 
 在 `lab01.1-pcl_and_cognitive_services` 中，我们生成了一个简单的 C# 应用程序，使你能够从本地驱动器中引入图像，然后调用多种不同的认知服务来收集这些图像上的数据：
 
-- [计算机视觉](https://www.microsoft.com/cognitive-services/zh-cn/computer-vision-api)：用于获取标签和描述
-- [人脸](https://www.microsoft.com/cognitive-services/zh-cn/face-api)：用于从每个图像中抓取人脸及其细节
-- [情感](https://www.microsoft.com/cognitive-services/zh-cn/emotion-api)：用于提取图像中每张人脸的情绪分数
+- [计算机视觉](https://www.microsoft.com/cognitive-services/zh-cn/computer-vision-api)： 用于获取标签和描述
+- [人脸](https://www.microsoft.com/cognitive-services/zh-cn/face-api)： 用于从每个图像中抓取人脸及其细节
+- [情感](https://www.microsoft.com/cognitive-services/zh-cn/emotion-api)： 用于提取图像中每张人脸的情绪分数
 
 获得这些数据后，我们会对其进行处理并将所需的所有信息存储在 [DocumentDB](https://azure.microsoft.com/zh-cn/services/documentdb/)（我们的 [NoSQL](https://en.wikipedia.org/wiki/NoSQL) [PaaS](https://azure.microsoft.com/zh-cn/overview/what-is-paas/) 产品/服务）中。
 
@@ -52,7 +52,7 @@
 
 ![体系结构图](./resources/assets/AI_Immersion_Arch.png)
 
-> 这个实验按这个[认知服务教程](https://github.com/noodlefrenzy/CognitiveServicesTutorial)进行了修改。
+> 这个实验按这个[认知服务教程](https://github.com/noodlefrenzy/CognitiveServicesTutorial) 进行了修改。
 
 ## 导航 GitHub ##
 

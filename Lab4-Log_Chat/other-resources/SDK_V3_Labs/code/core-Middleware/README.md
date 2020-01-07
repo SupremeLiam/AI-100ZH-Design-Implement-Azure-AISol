@@ -29,7 +29,7 @@ public class DebugActivityLogger : IActivityLogger
 }
 ````
 
-默认情况下，BotBuilder 库使用对话容器注册 [`NullActivityLogger`](https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Library/Microsoft.Bot.Builder/Dialogs/IActivityLogger.cs#L81)，这是一种不需要执行任何操作的活动记录器。查看 [`Global.asax.cs`](Global.asax.cs#L11-L13) 中示例的 [`DebugActivityLogger`](DebugActivityLogger.cs) 的 Autofac 容器中的注册。
+默认情况下，BotBuilder 库使用对话容器注册 [`NullActivityLogger`](https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Library/Microsoft.Bot.Builder/Dialogs/IActivityLogger.cs#L81)， 这是一种不需要执行任何操作的活动记录器。查看 [`Global.asax.cs`](Global.asax.cs#L11-L13) 中示例的 [`DebugActivityLogger`](DebugActivityLogger.cs) 的 Autofac 容器中的注册。
 
 ````C#
 var builder = new ContainerBuilder();
@@ -39,7 +39,7 @@ builder.Update(Conversation.Container);
 
 ### 结果
 
-打开和运行示例解决方案时，你将在 [Visual Studio 输出窗口的调试文本窗格](https://blogs.msdn.microsoft.com/visualstudioalm/2015/02/09/the-output-window-while-debugging-with-visual-studio/)中看到以下结果。
+打开和运行示例解决方案时，你将在 [Visual Studio 输出窗口的调试文本窗格](https://blogs.msdn.microsoft.com/visualstudioalm/2015/02/09/the-output-window-while-debugging-with-visual-studio/) 中看到以下结果。
 
 机器人收到的消息：
 ````

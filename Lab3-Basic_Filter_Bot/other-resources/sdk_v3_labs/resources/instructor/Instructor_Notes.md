@@ -8,7 +8,7 @@
     *	在课堂上提问，例如，谁实施了机器人？他们分别是什么角色？他们对自己机器人的有什么看法？他们在使用和访问机器人方面的容易程度？他们的机器人是否灵活？是否有自定义选项？
 *	概述使用简单 PowerPoint 或网站屏幕共享的机器人
     *	UPS C#、机器人、LUIS https://www.youtube.com/watch?v=M8SIs1GfSz0 
-    * https://docs.microsoft.com/zh-cn/bot-framework/bot-service-overview-introduction 
+    *	https://docs.microsoft.com/zh-cn/bot-framework/bot-service-overview-introduction 
 *	介绍一些机器人方案 - 从使用网站开始
     *	https://docs.microsoft.com/zh-cn/bot-framework/bot-service-scenario-overview
     *	询问学生他们是否可以想到或分享他们实施机器人甚至与机器人交互的其他示例

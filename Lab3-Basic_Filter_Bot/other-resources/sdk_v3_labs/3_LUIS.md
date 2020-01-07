@@ -14,7 +14,7 @@ using Microsoft.Bot.Builder.Luis.Models;
 
 ```
 
-接下来，使用 LUIS 应用 ID 和 LUIS 密钥为类提供一个 LuisModel 属性。  如果找不到这些值，请返回 http://luis.ai。  单击你的应用程序，然后转到“发布应用”页。可从终结点 URL 获取 LUIS 应用 ID 和 LUIS 密钥（提示：LUIS 应用 ID 中将包含连字符，而 LUIS 密钥则不会。需要使用 LUIS 应用 ID 和 LUIS 密钥将以下代码行直接放在 `[Serializable]` 上方：
+接下来，使用 LUIS 应用 ID 和 LUIS 密钥为类提供一个 LuisModel 属性。  如果找不到这些值，请返回 http://luis.ai。  单击你的应用程序，然后转到“发布应用”页。可从终结点 URL 获取 LUIS 应用 ID 和 LUIS 密钥（提示：LUIS 应用 ID 中将包含连字符，而 LUIS 密钥则不会）。需要使用 LUIS 应用 ID 和 LUIS 密钥将以下代码行直接放在 `[Serializable]` 上方：
 
 ```csharp
 
@@ -26,7 +26,7 @@ namespace PictureBot.Dialogs
 ...
 ```
 
-> 有趣的是：可以使用 [Autofac](https://autofac.org/) 在类上动态加载 LuisModel 属性，而不是对其进行硬编码，以便可以将其正确存储在配置文件中。  [AlarmBot 示例](https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Samples/AlarmBot/Models/AlarmModule.cs#L24)中有相关示例。  
+> 有趣的是：可以使用 [Autofac](https://autofac.org/) 在类上动态加载 LuisModel 属性，而不是对其进行硬编码，以便可以将其正确存储在配置文件中。  [AlarmBot 示例](https://github.com/Microsoft/BotBuilder/blob/master/CSharp/Samples/AlarmBot/Models/AlarmModule.cs#L24) 中有相关示例。  
 
 
 让我们从添加“问候语”意图开始（在已经放入 DispatchDialog 中的所有代码下）：
@@ -133,7 +133,7 @@ LUIS 中的“None”意图意味着言语没有映射到任何意图。  在这
 
 ```csharp
 
-        // 由于前一组中没有 scorable 入选，对话将发送一条帮助消息。
+        // 由于前一组中没有可得分项入选，对话将发送一条帮助消息。
         [MethodBind]
         [ScorableGroup(2)]
         public async Task Default(IDialogContext context, IActivity activity)

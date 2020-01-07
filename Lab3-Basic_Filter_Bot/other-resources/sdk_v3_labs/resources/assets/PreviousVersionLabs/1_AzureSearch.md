@@ -3,7 +3,7 @@
 
 ## Azure 搜索 
 
-[Azure 搜索](https://docs.microsoft.com/zh-cn/azure/search/search-what-is-azure-search)是一种“搜索即服务”的解决方案，开发人员通过该方案可将出色的搜索体验集成到应用程序中，而无需管理基础设施或成为搜索专家。
+[Azure 搜索](https://docs.microsoft.com/zh-cn/azure/search/search-what-is-azure-search) 是一种“搜索即服务”的解决方案，开发人员通过该方案可将出色的搜索体验集成到应用程序中，而无需管理基础设施或成为搜索专家。
 
 开发人员在 Azure 中寻找 PaaS 服务，以便在其应用中以更快的速度获得更佳结果。虽然搜索功能是许多类型应用程序的关键所在，但 Web 搜索引擎为搜索设置了很高的门槛。用户期望的是：即时结果，在键入时自动完成，突出显示搜索结果中的热门内容，良好的排名，并且即使他们拼写错误或包含额外字词，也要能够理解他们所寻找的内容。
 
@@ -17,11 +17,11 @@
 1. 预配服务
 	- 你可以通过[门户](https://docs.microsoft.com/zh-cn/azure/search/search-create-service-portal)或 [PowerShell](https://docs.microsoft.com/zh-cn/azure/search/search-manage-powershell) 创建或预配 Azure 搜索服务。
 2. 创建索引
-	- [索引](https://docs.microsoft.com/zh-cn/azure/search/search-what-is-an-index)是数据的容器，比如“表”。它具有架构、[CORS 选项](https://docs.microsoft.com/zh-cn/aspnet/core/security/cors)、搜索选项。你可以在[门户](https://docs.microsoft.com/zh-cn/azure/search/search-create-index-portal)中或在[应用初始化](https://docs.microsoft.com/zh-cn/azure/search/search-create-index-dotnet)期间创建索引。 
+	- [索引](https://docs.microsoft.com/zh-cn/azure/search/search-what-is-an-index) 是数据的容器，比如“表”。它具有架构、[CORS 选项](https://docs.microsoft.com/zh-cn/aspnet/core/security/cors)、 搜索选项。你可以在[门户](https://docs.microsoft.com/zh-cn/azure/search/search-create-index-portal)中或在[应用初始化](https://docs.microsoft.com/zh-cn/azure/search/search-create-index-dotnet)期间创建索引。 
 3. 索引数据
 	- 有两种方法可以[使用数据填充索引](https://docs.microsoft.com/zh-cn/azure/search/search-what-is-data-import)。第一个选项是使用 Azure 搜索 [REST API](https://docs.microsoft.com/zh-cn/azure/search/search-import-data-rest-api) 或 [.NET SDK](https://docs.microsoft.com/zh-cn/azure/search/search-import-data-dotnet) 手动将数据填充到索引中。第二个选项是将一个[支持的数据源](https://docs.microsoft.com/zh-cn/azure/search/search-import-data-portal)指向索引，并让 Azure 搜索自动按计划引入数据。
 4. 搜索索引
-	- 向 Azure 搜索提交搜索请求时，可以使用简单搜索选项，并可以对结果进行[筛选](https://docs.microsoft.com/zh-cn/azure/search/search-filters)、[排序](https://docs.microsoft.com/zh-cn/rest/api/searchservice/add-scoring-profiles-to-a-search-index)、[设计](https://docs.microsoft.com/zh-cn/azure/search/search-faceted-navigation)和[分页](https://docs.microsoft.com/zh-cn/azure/search/search-pagination-page-layout)。你能够解决拼写错误、语音和正则表达式的问题，并且可以选择使用搜索和[建议](https://docs.microsoft.com/zh-cn/rest/api/searchservice/suggesters)。通过这些查询参数，你能够对[全文搜索体验](https://docs.microsoft.com/zh-cn/azure/search/search-query-overview)实现更深层次的控制
+	- 向 Azure 搜索提交搜索请求时，可以使用简单搜索选项，并可以对结果进行[筛选](https://docs.microsoft.com/zh-cn/azure/search/search-filters)、[排序](https://docs.microsoft.com/zh-cn/rest/api/searchservice/add-scoring-profiles-to-a-search-index)、[设计](https://docs.microsoft.com/zh-cn/azure/search/search-faceted-navigation)和[分页](https://docs.microsoft.com/zh-cn/azure/search/search-pagination-page-layout)。 你能够解决拼写错误、语音和正则表达式的问题，并且可以选择使用搜索和[建议](https://docs.microsoft.com/zh-cn/rest/api/searchservice/suggesters)。 通过这些查询参数，你能够对[全文搜索体验](https://docs.microsoft.com/zh-cn/azure/search/search-query-overview) 实现更深层次的控制
 
 
 ### 实验：创建 Azure 搜索服务
@@ -36,9 +36,9 @@
 
 ### 实验：创建 Azure 搜索索引
 
-索引是 Azure 搜索服务使用的文档和其他构造的永久存储。索引就像一个数据库，可以保存数据并接受搜索查询。你可以定义要映射的索引架构，以反映要搜索的文档的结构，类似于数据库中的字段。这些字段具有一些属性，这些属性告诉我们这是否为全文可搜索，或者是否可进行筛选。  可以通过编程方式[推送内容](https://docs.microsoft.com/zh-cn/rest/api/searchservice/addupdate-or-delete-documents)或使用 [Azure 搜索索引器](https://docs.microsoft.com/zh-cn/azure/search/search-indexer-overview)（可抓取常见数据存储）将内容填充到 Azure 搜索中。
+索引是 Azure 搜索服务使用的文档和其他构造的永久存储。索引就像一个数据库，可以保存数据并接受搜索查询。你可以定义要映射的索引架构，以反映要搜索的文档的结构，类似于数据库中的字段。这些字段具有一些属性，这些属性告诉我们这是否为全文可搜索，或者是否可进行筛选。  可以通过编程方式[推送内容](https://docs.microsoft.com/zh-cn/rest/api/searchservice/addupdate-or-delete-documents) 或使用 [Azure 搜索索引器](https://docs.microsoft.com/zh-cn/azure/search/search-indexer-overview) （可抓取常见数据存储）将内容填充到 Azure 搜索中。
 
-对于本实验，我们将使用[用于 Cosmos DB 的 Azure 搜索索引器](https://docs.microsoft.com/zh-cn/azure/search/search-howto-index-documentdb)来抓取 Cosmos DB 容器中的数据。 
+对于本实验，我们将使用[用于 Cosmos DB 的 Azure 搜索索引器](https://docs.microsoft.com/zh-cn/azure/search/search-howto-index-documentdb) 来抓取 Cosmos DB 容器中的数据。 
 
 ![导入向导](./resources/assets/AzureSearch-ImportData.png) 
 
@@ -52,7 +52,7 @@
 
 此时，Azure 搜索将连接到你的 Cosmos DB 容器并分析一些文档，以确定 Azure 搜索索引的默认架构。完成此操作后，你可以根据应用程序的需要设置字段的属性。
 
->注意：你可能会看到一个警告（“_ts”字段不是有效的字段名称）。我们的实验中可以忽略此警告，不过你可以在[此处](https://docs.microsoft.com/azure/search/search-indexer-field-mappings)阅读更多相关信息。
+>**注意**：你可能会看到一个警告（“_ts”字段不是有效的字段名称）。我们的实验中可以忽略此警告，不过你可以在[此处](https://docs.microsoft.com/azure/search/search-indexer-field-mappings) 阅读更多相关信息。
 
 将索引名称更新为：**图像**
 
@@ -105,7 +105,7 @@
 
 在生成的 json 中，你将看到 `@search.score` 后面有一个数字。评分是指对搜索结果中所返回每一项的搜索得分进行计算。该分数是当前搜索操作上下文中项目相关性的指标。分数越高，项目相关性越大。在搜索结果中，根据每个项目计算出的搜索得分，从高到低对项目进行排序。
 
-Azure 搜索使用默认评分来计算初始分数，但可以通过[计分概要文件](https://docs.microsoft.com/zh-cn/rest/api/searchservice/add-scoring-profiles-to-a-search-index)自定义该计算。如果你想体验一下使用[术语提升](https://docs.microsoft.com/zh-cn/rest/api/searchservice/Lucene-query-syntax-in-Azure-Search#bkmk_termboost)来评分，本研讨会结束时还有一个额外的实验。
+Azure 搜索使用默认评分来计算初始分数，但可以通过[计分概要文件](https://docs.microsoft.com/zh-cn/rest/api/searchservice/add-scoring-profiles-to-a-search-index) 自定义该计算。如果你想体验一下使用[术语提升](https://docs.microsoft.com/zh-cn/rest/api/searchservice/Lucene-query-syntax-in-Azure-Search#bkmk_termboost) 来评分，本研讨会结束时还有一个额外的实验。
 
 **提早完成？请尝试这个额外加分练习的实验：**
 

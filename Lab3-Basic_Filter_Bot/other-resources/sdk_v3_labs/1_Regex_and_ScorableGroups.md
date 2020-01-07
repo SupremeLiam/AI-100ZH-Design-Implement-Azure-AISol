@@ -1,4 +1,4 @@
-﻿## 1_正则表达式和评分组：
+﻿## 1_Regex_and_ScorableGroups：
 预计用时：10-15 分钟
 
 ## 生成机器人
@@ -8,8 +8,8 @@
 ### 实验 1.1：为机器人开发而设置
 
 我们将使用 C# SDK 来开发机器人。  首先，你需要准备两项内容：
-1. Bot Framework 项目模板，可在[此处](http://aka.ms/bf-bc-vstemplate)下载。  此文件名为“Bot Application.zip”，你应将它保存到 \Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\ 目录中。  只需将整个压缩文件放在其中即可；无需解压缩。  
-2. 在[此处](https://github.com/Microsoft/BotFramework-Emulator/releases/download/v3.5.33/botframework-emulator-Setup-3.5.33.exe)下载用于本地测试机器人的 Bot Framework Emulator。  此仿真器会安装到 `c:\Users\`_your-username_`\AppData\Local\botframework\app-3.5.33\botframework-emulator.exe` 或 Downloads 文件夹，具体位置因浏览器而异。
+1. Bot Framework 项目模板，可在[此处](http://aka.ms/bf-bc-vstemplate)下载。  此文件名为“Bot Application.zip”，你应将它保存到 \Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#\ 目录中。  只需将整个压缩文件放在其中即可；无需解压缩。  
+2. 在[此处](https://github.com/Microsoft/BotFramework-Emulator/releases/download/v3.5.33/botframework-emulator-Setup-3.5.33.exe) 下载用于本地测试机器人的 Bot Framework Emulator。  此仿真器会安装到 `c:\Users\`_your-username_`\AppData\Local\botframework\app-3.5.33\botframework-emulator.exe` 或 Downloads 文件夹，具体位置因浏览器而异。
 
 ### 实验 1.2：创建一个简单的机器人并运行它
 
@@ -17,9 +17,9 @@
 
 ![新建机器人应用程序](./resources/assets/NewBotApplication.png) 
 
->**“创建一个简单的机器人并运行它”** 查询搜索索引这一实验剩下的部分是可选进行的。根据前提条件，你应该拥有使用 Bot Framework 的经验。可以按 F5 来确认它的构建是否正确，然后继续下一个实验。
+>**“创建一个简单的机器人并运行它”** 这一实验剩下的部分是可选进行的。根据前提条件，你应该拥有使用 Bot Framework 的经验。可以按 F5 来确认它的构建是否正确，然后继续下一个实验。
 
-浏览并检查示例机器人代码，这是一个回音机器人，它会重复你的消息及其字符长度。  特别要注意的是：
+浏览并检查示例机器人代码，这是一个回音机器人，它会重复你的消息及其字符长度。  特别要**注意**的是
 + 在 App_Start 下的 **WebApiConfig.cs** 中，路由模板是 api/{controller}/{id}，其中 id 是可选的。  这就是我们在调用机器人的终结点时始终会在末尾追加 api/messages 的原因。  
 + Controllers 下的 **MessagesController.cs** 是机器人的入口点。请注意，机器人可以响应许多不同的活动类型，并且发送消息将调用 RootDialog。  
 + 在 Dialogs 下的 **RootDialog.cs** 中，“StartAsync”是等待用户消息的入口点，而“MessageReceivedAsync”是处理接收到的消息，然后等待进一步消息的方法。  我们可以使用“context.PostAsync”将来自机器人的消息发回给用户。  
@@ -101,7 +101,7 @@ using System.Collections.Generic;
                     //await OrderPic(context, null);
                     break;
                 default:
-                    await context.PostAsync("I'm sorry.I didn't understand you.");
+                    await context.PostAsync("I'm sorry. I didn't understand you.");
                     break;
             }
         }

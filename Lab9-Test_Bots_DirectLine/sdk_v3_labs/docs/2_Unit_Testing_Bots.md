@@ -61,7 +61,7 @@ using (new FiberTestBase.ResolveMoqAssembly(rootDialog))
 
 ## 5.	提早完成？试试下面的练习，获得额外加分：
 
-A. 另外编写一个名为 EchoStartsWith 的 TestMethod，它验证回声提示是否以 *“你发送的是”开头*。
+A. 另外编写一个名为 *EchoStartsWith* 的 TestMethod，它验证回声提示是否以“你发送的是”开头。
 
 *提示：* TestMethod 与 ShouldReturnEcho() 非常相似，你应检查 toUser.Text 是否以“你发送的是”开头。 
 
@@ -70,6 +70,6 @@ B. 你能否验证复述的消息是由机器人发送的？
 *提示：* 这将涉及查看收到的 IMessageActivity 响应的属性。
 
 
- ### 继续学习 [3_Direct_Line_测试](3_Direct_Line_Testing.md)
+### 继续学习 [3_Direct_Line_测试](3_Direct_Line_Testing.md)
 
  返回 [README](../0_README.md)

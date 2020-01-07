@@ -39,7 +39,7 @@ builder.Update(Conversation.Container);
 
 ### 结果
 
-打开和运行示例解决方案时，你将在 [Visual Studio 输出窗口的调试文本窗格](https://blogs.msdn.microsoft.com/visualstudioalm/2015/02/09/the-output-window-while-debugging-with-visual-studio/)中看到以下结果。
+打开和运行示例解决方案时，你将在 [Visual Studio 输出窗口的调试文本窗格](https://blogs.msdn.microsoft.com/visualstudioalm/2015/02/09/the-output-window-while-debugging-with-visual-studio/) 中看到以下结果。
 
 机器人收到的消息：
 ````

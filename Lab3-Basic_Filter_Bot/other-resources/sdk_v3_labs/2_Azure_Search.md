@@ -1,4 +1,4 @@
-﻿## 2_Azure 搜索：
+﻿## 2_Azure_Search：
 预计用时：10-15 分钟
 
 ### 实验 2.1：为 Azure 搜索配置机器人 
@@ -14,9 +14,9 @@
     <add key="SearchDialogsIndexName" value="images" />
 ```
 
-将 SearchDialogsServiceName 的值设置为之前创建的 Azure 搜索服务的名称。  如有需要，请返回 [Azure 门户](https://portal.azure.com)中查找此名称。  
+将 SearchDialogsServiceName 的值设置为之前创建的 Azure 搜索服务的名称。  如有需要，请返回 [Azure 门户](https://portal.azure.com) 中查找此名称。  
 
-将 SearchDialogsServiceKey 的值设置为此服务的密钥。  该密钥可在 [Azure 门户](https://portal.azure.com)中 Azure 搜索的“密钥”部分下找到。  在下面的屏幕截图中，SearchDialogsServiceName 将为“aiimmersionsearch”，SearchDialogsServiceKey 将为“375...”。  
+将 SearchDialogsServiceKey 的值设置为此服务的密钥。  该密钥可在 [Azure 门户](https://portal.azure.com)中 Azure 搜索的“密钥”部分下找到。  在下面的屏幕截图中，SearchDialogsServiceName 将为“aiimmersionsearch”，SearchDialogsServiceKey 将为“375…”。  
 
 ![Azure 搜索设置](./resources/assets/AzureSearchSettings.jpg) 
 
@@ -30,7 +30,7 @@
 1. [ImageMapper.cs](./resources/code/Models/ImageMapper.cs)
 2. [SearchHit.cs](./resources/code/Models/SearchHit.cs)
 
->可在 [resources/code/Models](./resources/code/Models) 下的此存储库中找到这些文件。
+>可在 [resources/code/Models](./resources/code/Models) 下的此存储库中找到这些文件
 
 接下来，右键单击 Visual Studio 的“解决方案资源管理器”中的 Dialogs 文件夹，然后选择“添加”-->“类”。  将类命名为“SearchDialog.cs”。在[此处](./resources/code/SearchDialog.cs)添加内容。
 

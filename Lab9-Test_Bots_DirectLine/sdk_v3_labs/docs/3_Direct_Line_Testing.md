@@ -8,13 +8,13 @@
 
 1. 从 code\core-DirectLine 打开项目，并导入 Visual Studio 中的解决方案。
 
-2. 在 DirectLineBot 解决方案中，你将找到两个项目：DirectLineBot 和 DirectLineSampleClient。你可以选择使用 **发布的机器人（来自之前的实验）**，也可以为本实 **验发布 DirectLineBot**。
+2. 在 DirectLineBot 解决方案中，你将找到两个项目：DirectLineBot 和 DirectLineSampleClient。你可以选择使用 **发布的机器人（来自之前的实验）**，也可以为本实验 **发布 DirectLineBot**。
 
 要使用 DirectLineBot，你必须：
 
-- 将它部署到 Azure。请按照[本教程](https://docs.microsoft.com/zh-cn/bot-framework/deploy-dotnet-bot-visual-studio)操作，了解如何将 .NET 机器人直接从 Visual Studio 部署到 Azure。
+- 将它部署到 Azure。请按照[本教程](https://docs.microsoft.com/zh-cn/bot-framework/deploy-dotnet-bot-visual-studio) 操作，了解如何将 .NET 机器人直接从 Visual Studio 部署到 Azure。
 
-- 在门户中注册 DirectLineBot，这样其他人才可以使用。[注册说明](https://docs.microsoft.com/zh-cn/bot-framework/portal-register-bot)中提供了注册的相关步骤。
+- 在门户中注册 DirectLineBot，这样其他人才可以使用。[注册说明](https://docs.microsoft.com/zh-cn/bot-framework/portal-register-bot) 中提供了注册的相关步骤。
 
 
 DirectLineSampleClient 是将消息发送到机器人的客户端。
@@ -32,7 +32,7 @@ DirectLineSampleClient 是将消息发送到机器人的客户端。
 
 ## Web 配置
 
-然后，应将从 Azure 门户中的 *“配置 Direct Line”* 获取的密钥添加到已发布机器人的 Web.config 文件中的“配置”设置中。此外，你还需要捕获并添加机器人 ID（也称为机器人句柄）、应用密码和应用 ID，并输入 DirectLineSampleClient 项目中 App.config 的 appSettings 部分。要在 App.config 中输入/编辑的 Web.config 相关行如下所列：
+然后，应将从 Azure 门户中的 *配置 Direct Line* 获取的密钥添加到已发布机器人的 Web.config 文件中的“配置”设置中。此外，你还需要捕获并添加机器人 ID（也称为机器人句柄）、应用密码和应用 ID，并输入 DirectLineSampleClient 项目中 App.config 的 appSettings 部分。要在 App.config 中输入/编辑的 Web.config 相关行如下所列：
 
 ```csharp
 <add key="DirectLineSecret" value="YourBotDirectLineSecret" />
@@ -77,7 +77,7 @@ DirectLineSampleClient 是将消息发送到机器人的客户端。
 	
 	要使用高级 REST 客户端，标头需要包含标头名称 (Authorization) 和标头值 (Bearer SecretKey)。请求 URL 为 https://directline.botframework.com/api/conversations/{conversationId}/messages 终结点
 	
-	下图表示从 *高级 Rest 客户端* 获得的对话。请注意对话“你好”以及发送回来的相应机器人响应。
+	下图表示从 *高级 Rest 客户* 端获得的对话。请注意对话“你好”以及发送回来的相应机器人响应。
 
 	![HTTPRequest](images/HTTPRequest.png)
 
@@ -89,7 +89,7 @@ DirectLineSampleClient 是将消息发送到机器人的客户端。
 
 	不同于更低的版本，使用 3.0 版，你还可以发送图像或英雄卡等各种媒体。如果使用 DirectLineBotDialog.cs，其中某个 case 语句查找文本“send me a botframework image”以发送图像
 
-	```c#
+```c#
 	案例“send me a botframework image”：
 						
 		reply.Text = $"Sample message with an Image attachment";
@@ -101,11 +101,11 @@ DirectLineSampleClient 是将消息发送到机器人的客户端。
 			};
 
 		reply.Attachments.Add(imageAttachment);
-	```
+```
 
 	使用客户端输入此文本，并通过 curl 查看结果，如下所示。你将在图像数组中找到显示的图像 URL。
 
 	![图像数组](images/ImagesArray.png)
 
 	
- ### 继续查看[README](../0_README.md)以查看实验
+### 继续查看[README](../0_README.md)以查看实验

@@ -2,7 +2,7 @@
 
 **提早完成？请尝试这个额外加分练习的实验：**
 
-尝试使用更高级的 Azure 搜索查询。通过扩展 LUIS 模型来识别“查找快乐的人”之类的实体，将“快乐的”映射到“快乐”（认知服务返回的情感），并使用[术语提升](https://docs.microsoft.com/zh-cn/rest/api/searchservice/Lucene-query-syntax-in-Azure-Search#bkmk_termboost)将这些实体转换为提升的查询，从而添加术提升__。 
+尝试使用更高级的 Azure 搜索查询。通过扩展 LUIS 模型来识别 _“查找快乐的人”_ 之类的实体，将“快乐的”映射到“快乐”（认知服务返回的情感），并使用[术语提升](https://docs.microsoft.com/zh-cn/rest/api/searchservice/Lucene-query-syntax-in-Azure-Search#bkmk_termboost)将这些实体转换为提升的查询，从而添加术语提升。 
 
 ## 实验完成
 

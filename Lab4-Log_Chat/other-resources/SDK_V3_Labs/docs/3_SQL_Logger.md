@@ -8,7 +8,7 @@
 
 2.1.   从 Visual Studio 中的 code\sql-core-Middleware 导入项目。
 
-2.2.   因为我们将写入 SQL 数据库。要创建一个新的数据库，请转到 Azure 门户网站并按照[创建 DB - 门户](https://docs.microsoft.com/zh-cn/azure/sql-database/sql-database-get-started-portal)步骤操作。但是创建的是名为 Botlog 的数据库，而不是链接中建议的“MySampleDatabase”。在该过程结束时，应会看到“概述”选项卡，如下图所示。
+2.2.   因为我们将写入 SQL 数据库。要创建一个新的数据库，请转到 Azure 门户网站并按照[创建 DB - 门户](https://docs.microsoft.com/zh-cn/azure/sql-database/sql-database-get-started-portal) 步骤操作。但是创建的是名为 Botlog 的数据库，而不是链接中建议的“MySampleDatabase”。在该过程结束时，应会看到“概述”选项卡，如下图所示。
 
 ![Botlog](images/BotLog.png)
 
@@ -16,11 +16,11 @@
 
 ![连接字符串](images/ConnectionStrings.png)
 
-2.3.   要捕获自己的 IP 地址，请更改防火墙设置。如果按照以下[创建 DB - 门户](https://docs.microsoft.com/zh-cn/azure/sql-database/sql-database-get-started-portal)中的步骤操作，则你可能已经完成此操作。你的 IP 地址可在此处找到：https://whatismyipaddress.com/ 
+2.3.   要捕获自己的 IP 地址，请更改防火墙设置。如果按照以下[创建 DB - 门户](https://docs.microsoft.com/zh-cn/azure/sql-database/sql-database-get-started-portal) 中的步骤操作，则你可能已经完成此操作。你的 IP 地址可在此处找到：https://whatismyipaddress.com/ 
 
 ![防火墙设置](images/FirewallSettings.png)
 
-2.4.   使用以下 create table 语句（或架构）创建一个名为 userChatLog 的新表。我们将使用[创建 DB - 门户](https://docs.microsoft.com/zh-cn/azure/sql-database/sql-database-get-started-portal)链接中“查询 SQL 数据库”部分使用的相同工具。在 Azure 门户中，单击左侧菜单中的“数据资源管理器(预览)”。要登录，请使用在创建数据库时指定的相同帐户和密码。粘贴下面的脚本，然后单击“运行”。预期的结果是显示消息“查询成功: 受影响的行：0”。 
+2.4.   使用以下 create table 语句（或架构）创建一个名为 userChatLog 的新表。我们将使用[创建 DB - 门户](https://docs.microsoft.com/zh-cn/azure/sql-database/sql-database-get-started-portal) 链接中“查询 SQL 数据库”部分使用的相同工具。在 Azure 门户中，单击左侧菜单中的“数据资源管理器(预览)”。要登录，请使用在创建数据库时指定的相同帐户和密码。粘贴下面的脚本，然后单击“运行”。预期的结果是显示消息“查询成功: 受影响的行：0”。 
 
 ```
 CREATE TABLE userChatLog(id int IDENTITY(1, 1),fromId varchar(max),toId varchar(max),message varchar(max),PRIMARY KEY(id));

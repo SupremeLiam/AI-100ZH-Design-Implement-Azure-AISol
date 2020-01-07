@@ -5,7 +5,7 @@
 
 首先，让我们[了解 Microsoft 的语言理解智能服务 (LUIS)](https://docs.microsoft.com/zh-cn/azure/cognitive-services/LUIS/Home)。
 
-我们现已了解 LUIS 的含义，接着就要规划 LUIS 应用。我们将创建一个基于搜索返回图像的机器人，然后我们可以共享或订购这些图像。我们需要创建可触发机器人能够执行的不同操作的意图，然后创建实体来对执行该操作所需的一些参数建模。例如，PictureBot 的一个意图可能是“SearchPics”，该意图触发搜索服务来查找照片，这需要一个“facet”实体才能了解要搜索的内容。可在[此处](https://docs.microsoft.com/zh-cn/azure/cognitive-services/LUIS/plan-your-app)查看更多规划应用的示例。
+我们现已了解 LUIS 的含义，接着就要规划 LUIS 应用。我们将创建一个基于搜索返回图像的机器人，然后我们可以共享或订购这些图像。我们需要创建可触发机器人能够执行的不同操作的意图，然后创建实体来对执行该操作所需的一些参数建模。例如，PictureBot 的一个意图可能是“SearchPics”，该意图触发搜索服务来查找照片，这需要一个“facet”实体才能了解要搜索的内容。可在[此处](https://docs.microsoft.com/zh-cn/azure/cognitive-services/LUIS/plan-your-app) 查看更多规划应用的示例。
 
 构思好应用后，我们就可以[构建并对其进行训练](https://docs.microsoft.com/zh-cn/azure/cognitive-services/LUIS/luis-get-started-create-app)。以下是创建 LUIS 应用程序时通常要采取的步骤：
   1. [添加意图](https://docs.microsoft.com/zh-cn/azure/cognitive-services/LUIS/add-intents) 
@@ -33,7 +33,7 @@
 
 导航到 [https://www.luis.ai](https://www.luis.ai) 并使用 Microsoft 帐户登录。  （该帐户应与上一节中用于创建 LUIS 密钥的帐户相同）。  你应该重定向到 [https://www.luis.ai/applications](https://www.luis.ai/applications) 上 LUIS 应用程序的列表。  我们将创建一个新 LUIS 应用来支持机器人。  
 
-> 有趣的是：请注意，[当前页面](https://www.luis.ai/applications)上的“新应用”按钮旁边也有一个“导入应用”。  创建 LUIS 应用程序后，可以将整个应用导出为 JSON 并将其签入源代码管理。  这是建议的最佳做法，因此你可以在编写代码时对 LUIS 模型进行版本控制。  可以使用“导入应用”按钮重新导入导出的 LUIS 应用。  如果跟不上实验的进度并想走捷径，则可以单击“导入应用”按钮并导入 [LUIS 模型](./resources/code/LUIS/PictureBotLuisModel.json)。  
+> 有趣的是：请注意，[当前页面](https://www.luis.ai/applications) 上的“新应用”按钮旁边也有一个“导入应用”。  创建 LUIS 应用程序后，可以将整个应用导出为 JSON 并将其签入源代码管理。  这是建议的最佳做法，因此你可以在编写代码时对 LUIS 模型进行版本控制。  可以使用“导入应用”按钮重新导入导出的 LUIS 应用。  如果跟不上实验的进度并想走捷径，则可以单击“导入应用”按钮并导入 [LUIS 模型](./resources/code/LUIS/PictureBotLuisModel.json)。  
 
 在 [https://www.luis.ai/applications](https://www.luis.ai/applications) 中单击“新建应用”按钮。  为其命名（我选择“PictureBotLuisModel”）并将区域性设置为“英语”。  你可以选择提供说明。然后单击“创建”。  
 
@@ -124,7 +124,7 @@
 
 ![带列表的自定义情感实体](./resources/assets/CustomEmotionEntityWithList.jpg) 
 
-> 注意：添加更多实体或功能时，请不要忘记转到 **“意图”>“言语”**，并使用添加的实体来确认/添加更多的实体。此外，还需要重新训练和发布模型。
+> **注意：** 添加更多实体或功能时，请不要忘记转到 **“意图”>“言语”**，并使用添加的实体来确认/添加更多的实体。此外，还需要重新训练和发布模型。
 
 
 ### 继续 [3_Bot](./3_Bot.md)

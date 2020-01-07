@@ -1,9 +1,9 @@
-﻿## 4_发布和注册：
+﻿## 4_Publish_and_Register：
 预计用时：10-15 分钟
 
 ### 实验 4.1：发布机器人
 
-使用 Microsoft Bot Framework 创建的机器人可以在任何可公开访问的 URL 上托管。  出于本实验的目的，我们将使用 [Azure 机器人服务](https://docs.microsoft.com/zh-cn/bot-framework/bot-service-overview-introduction)注册我们的机器人。
+使用 Microsoft Bot Framework 创建的机器人可以在任何可公开访问的 URL 上托管。  出于本实验的目的，我们将使用 [Azure 机器人服务](https://docs.microsoft.com/zh-cn/bot-framework/bot-service-overview-introduction) 注册我们的机器人。
 
 导航到门户。在门户中，单击“创建资源”并搜索“机器人”。选择“Web App Bot”，然后单击“创建”。对于名称，必须创建唯一标识符。建议使用类似 PictureBot[i][n] 的内容，其中 [i] 是你的姓名缩写，[n] 是一个数字（例如，我使用的是 PictureBotamt40）。放在离你最近的区域。
 对于定价层，请选择 F0，因为这是我们本次研讨会所需的全部内容。将机器人模板设置为基础 (C#)，并配置新的应用服务计划（将其放置于机器人所在的同一位置）。选择哪个模板无关紧要，因为我们将使用 PictureBot 对其进行覆盖。关闭 Application Insights（以节省资金）。单击“创建”。

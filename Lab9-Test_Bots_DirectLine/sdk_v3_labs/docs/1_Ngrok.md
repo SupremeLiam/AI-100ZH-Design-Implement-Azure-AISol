@@ -41,6 +41,6 @@
 
  在 Microsoft Bot Framework 上注册机器人时，能否使用消息终结点的转发 URL？使用任何通道（例如 Skype）上的转发 URL 在通道上测试机器人。
 
- ### 继续学习 [2_对机器人进行单元测试](2_Unit_Testing_Bots.md)
+### 继续学习 [2_对机器人进行单元测试](2_Unit_Testing_Bots.md)
 
  返回 [README](../0_README.md)
