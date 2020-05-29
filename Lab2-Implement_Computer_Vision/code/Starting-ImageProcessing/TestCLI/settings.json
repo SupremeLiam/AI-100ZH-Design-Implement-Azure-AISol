@@ -1,14 +1,14 @@
 ﻿{
   "CognitiveServicesKeys": {
-    "Vision": "VisionKeyHere"
+    "Vision": "5191e80f2bfd4c75a07afe8cae2bcc17"
   },
   "AzureStorage": {
-    "ConnectionString": "ConnectionStringHere",
+    "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=storemsa1;AccountKey=WynPmfyCmkbWgoN+XrkPIiD5mGP5yYVEbLRcpEbf54v2mFlHovOjqPV3LTtSKWxIVwox5xSU2gl8N0Jjtm2kXA==;EndpointSuffix=core.windows.net",
     "BlobContainer": "images"
   },
   "CosmosDB": {
-    "EndpointURI": "CosmosURIHere",
-    "Key": "CosmosKeyHere",
+    "EndpointURI": "https://vincent-cosmos-db-1.documents.azure.com:443/",
+    "Key": "LygXi8i3c3MbVDo6BPQj78W73K0cJ0WElxooXK935CVfGHceyQ8FJSBvrWxuGvQNi1XANxc5mYibGztpwLSGDg==",
     "DatabaseName": "images",
     "CollectionName": "metadata"
   }

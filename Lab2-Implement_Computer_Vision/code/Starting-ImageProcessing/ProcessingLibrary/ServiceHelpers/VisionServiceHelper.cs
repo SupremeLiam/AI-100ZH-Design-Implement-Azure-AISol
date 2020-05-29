@@ -42,7 +42,7 @@ namespace ServiceHelpers
 
         private static void InitializeVisionService()
         {
-            visionClient = new VisionServiceClient(apiKey);
+            visionClient = new VisionServiceClient(apiKey, "https://eastasia.api.cognitive.microsoft.com/vision/v1.0");
         }
 
         // handle throttling issues

@@ -108,6 +108,7 @@ namespace TestCLI
                         var resized = Util.ResizeIfRequired(file, 750);
                         Func<Task<Stream>> imageCB = async () => File.OpenRead(resized.Item2);
                         ImageInsights insights = await ImageProcessor.ProcessImageAsync(imageCB, fileName);
+                        // ImageInsights insights = await ImageProcessor.ProcessImageAsync(imageUrl, fileName);
                         Console.WriteLine($"Insights: {JsonConvert.SerializeObject(insights, Formatting.None)}");
                         var imageBlob = await blobStorage.UploadImageAsync(imageCB, fileName);
                         var metadata = new ImageMetadata(file);
@@ -127,6 +128,7 @@ namespace TestCLI
                 {
                     Console.WriteLine($"Error: {e}");
                 }
+                // Console.ReadKey();
             }
         }
 
