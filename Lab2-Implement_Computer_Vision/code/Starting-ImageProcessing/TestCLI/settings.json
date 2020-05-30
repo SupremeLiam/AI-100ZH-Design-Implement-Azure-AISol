@@ -1,6 +1,6 @@
 ﻿{
   "CognitiveServicesKeys": {
-    "Vision": "5191e80f2bfd4c75a07afe8cae2bcc17"
+    "Vision": "c4f6f07b1f8a4f56adb86df1825f9fbe"
   },
   "AzureStorage": {
     "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=storemsa1;AccountKey=WynPmfyCmkbWgoN+XrkPIiD5mGP5yYVEbLRcpEbf54v2mFlHovOjqPV3LTtSKWxIVwox5xSU2gl8N0Jjtm2kXA==;EndpointSuffix=core.windows.net",
